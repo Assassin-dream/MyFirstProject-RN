@@ -17,7 +17,7 @@ class myProject extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          欢迎!
+          欢迎来到英雄联盟!
         </Text>
         <Text style={styles.instructions}>
           你可以在这里开始编辑项目!
