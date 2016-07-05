@@ -20,7 +20,7 @@ class myProject extends Component {
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.ios.js
+          你可以在这里开始编辑项目!
         </Text>
         <Text style={styles.instructions}>
           Press Cmd+R to reload,{'\n'}
