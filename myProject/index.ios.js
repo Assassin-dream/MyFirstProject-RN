@@ -17,7 +17,7 @@ class myProject extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          欢迎!
         </Text>
         <Text style={styles.instructions}>
           你可以在这里开始编辑项目!
