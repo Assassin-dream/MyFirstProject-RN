@@ -20,7 +20,7 @@ var TabBarExample = React.createClass({
     getInitialState: function() {
         return {
             selectedTab: 'redTab',
-            notifCount: 1, //这是tabbar上的角标数值
+            notifCount: 1, //这是tabbar上的角标
         };
     },
 
