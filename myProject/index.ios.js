@@ -6,7 +6,6 @@
 
 import React, { Component } from 'react';
 
-var TabBarExample = require('./tabbar');
 
 import {
   AppRegistry,
@@ -16,24 +15,13 @@ import {
     TabBarIOS,
 } from 'react-native';
 
+var TabBarExample = require('./app/tabbar');
+
+
 class myProject extends Component {
   render() {
     return (
-      // <View style={styles.container}>
-      //   <Text style={styles.welcome}>
-      //     欢迎来到英雄联盟!
-      //   </Text>
-      //   <Text style={styles.instructions}>
-      //     你可以在这里开始编辑项目!
-      //   </Text>
-      //   <Text style={styles.instructions}>
-      //     Press Cmd+R to reload,{'\n'}
-      //     Cmd+D or shake for dev menu
-      //   </Text>
-      // </View>
-        <TabBarExample>
-          
-        </TabBarExample>
+        <TabBarExample />
     );
   }
 }
