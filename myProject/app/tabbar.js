@@ -15,11 +15,13 @@ var {
     View,
 } = ReactNative;
 
+import TalentList from './talent/TalentList';
+
 var TabBarExample = React.createClass({
 
     getInitialState: function() {
         return {
-            selectedTab: 'redTab',
+            selectedTab: 'First',
             notifCount: 1, //这是tabbar上的角标
         };
     },
@@ -36,35 +38,35 @@ var TabBarExample = React.createClass({
     render: function() {
         return (
             <TabBarIOS
-                tintColor="white"
-                barTintColor="darkslateblue">
+                tintColor="red"
+                barTintColor="white">
                 <TabBarIOS.Item
-                    title="Blue Tab"
-                    systemIcon="favorites"
-                    selected={this.state.selectedTab === 'blueTab'}
+                    title="首页"
+                    icon={{uri:''}}
+                    selected={this.state.selectedTab === 'First'}
                     onPress={() => {
             this.setState({
-              selectedTab: 'blueTab',
+              selectedTab: 'First',
             });
           }}>
                     {this._renderContent('grey', '灰色的tabbar')}
                 </TabBarIOS.Item>
                 <TabBarIOS.Item
                     systemIcon="history"
-                    selected={this.state.selectedTab === 'redTab'}
+                    selected={this.state.selectedTab === 'TalentList'}
                     onPress={() => {
             this.setState({
-              selectedTab: 'redTab',
+              selectedTab: 'TalentList',
             });
           }}>
-                    {this._renderContent('#783E33', '红色的tabbar')}
+                    <TalentList></TalentList>
                 </TabBarIOS.Item>
                 <TabBarIOS.Item
                     systemIcon="more"
-                    selected={this.state.selectedTab === 'greenTab'}
+                    selected={this.state.selectedTab === 'UserCenter'}
                     onPress={() => {
             this.setState({
-              selectedTab: 'greenTab',
+              selectedTab: 'UserCenter',
             });
           }}>
                     {this._renderContent('#21551C', '绿色的tabbar')}
